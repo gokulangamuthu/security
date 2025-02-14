@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.team-container {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px; 
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.orange-line {
+    width: 100%;
+    height: 80px; /* Broad orange line */
+    background-color: #9c9c9c;
+    position: relative;
+    top: 50px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -40px; /* Moves profiles to overlap the orange line */
+}
+
+.team-member {
+    background-color: #fcdcdc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 5px solid #fcb4f7; /* White border around the image */
+}
+
+.team-member h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Alternating positions for the team members */
+.team-member.above {
+    transform: translateY(-80px); /* Moves the profile above the orange line */
+}
+
+.team-member.below {
+    transform: translateY(80px); /* Moves the profile below the orange line */
+}
+
+/* Flexbox adjustments for even spacing of team members */
+.team-member {
+    flex: 1;
+    margin: 0 10px;
+}
+h1{
+    font-size: 2em;
+    margin-bottom: 40px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.team-member:nth-child(1) {
+transform: translateY(-150px);
+}
+.team-member:nth-child(2) {
+    transform: translateY(50px);
+    }
+    .team-member:nth-child(3) {
+        transform: translateY(-150px);
+        }
+        .team-member:nth-child(4) {
+            transform: translateY(50px);
+            }
+            .team-member:nth-child(5) {
+                transform: translateY(-150px);
+                }
+                body{
+                    background-color: rgb(182, 179, 182);
+                }
